@@ -1,0 +1,103 @@
+//<INPUT>====================================================================================================
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.input {
+  width: 100%;
+  display: block;
+  padding: 7px 14px;
+  border: 1px solid transparent;
+  color: #808080;
+  &.focus {
+  }
+  &.err {
+    border: 1px solid red;
+  }
+}
+textarea.input {
+  resize: none;
+  padding: 0px 0px;
+}
+//</INPUT>====================================================================================================
+
+//<FORM>====================================================================================================
+.form {
+  &__btn {
+    @include button-reset;
+  }
+}
+.subscribe-form {
+  position: relative;
+  flex: 0 1 45%;
+  @media (max-width: $md3+px) {
+    width: 100%;
+  }
+  &__input {
+    padding: 12px;
+    color: #808080;
+    font-size: 16px;
+    line-height: 28px;
+
+    @media (min-width: $md3+px) {
+      padding: 29px 14px 29px 26px;
+      font-size: 18px;
+    }
+  }
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 90px;
+    font-size: 36px;
+    background-color: #ffffff;
+    background-image: linear-gradient(to left, #00fff0 0%, #40b1e5 100%);
+  }
+}
+
+.sent-form {
+  &__input {
+    border: 1px solid #808080;
+    background-color: #ffffff;
+    opacity: 0.7;
+
+    margin-bottom: 15px;
+    @media (min-width: $md3+px) {
+      margin-bottom: 40px;
+    }
+
+    .input {
+      font-size: 14px;
+      @media (min-width: $md3+px) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__textarea {
+    border: 1px solid #808080;
+    background-color: #ffffff;
+    opacity: 0.7;
+    margin-bottom: 40px;
+    textarea {
+      width: 100%;
+      padding: 15px;
+      font-size: 18px;
+      color: #000;
+      text-align: left;
+      min-height: 135px;
+    }
+  }
+
+  &__btn {
+    background-color: #ff3a2d;
+    padding: 16px 40px;
+  }
+}
+
+//</FORM>====================================================================================================

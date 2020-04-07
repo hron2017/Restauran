@@ -1,0 +1,75 @@
+.section-d {
+	position: relative;
+	background-image: url(../img/delivary/delivary-bg.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	@media (min-width: $md2+px) {
+		padding: 200px 0;
+	}
+}
+
+.delivary {
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	&-body {
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: $md3+px) {
+			flex-direction: column;
+		}
+	}
+}
+
+.delivary-col {
+	flex: 0 1 32%;
+	position: relative;
+	background-color: #fff;
+	padding: 80px 41px 52px 42px;
+
+	@media (max-width: $md3+px) {
+		padding: 60px 20px 30px 20px;
+
+		margin-bottom: 65px;
+	}
+	&__image {
+		width: 100px;
+		height: 80px;
+		box-shadow: 0 2px 8px rgba(33, 30, 31, 0.5);
+		border-radius: 0 24px;
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		position: absolute;
+		left: 50%;
+		margin-left: -50px;
+		top: -40px;
+	}
+
+	&__title {
+		color: #ff3a2d;
+		font-family: "Lobster Two";
+		font-weight: 400;
+		font-size: 24px;
+		margin-bottom: 14px;
+		@media (min-width: $md3+px) {
+			font-size: 28px;
+			margin-bottom: 29px;
+		}
+	}
+
+	&__text {
+		color: #808080;
+		line-height: 28px;
+
+		@media (min-width: $md3+px) {
+			line-height: 20px;
+		}
+	}
+}

@@ -1,0 +1,104 @@
+.section-s {
+	padding-top: 0;
+}
+
+.stuff {
+	position: relative;
+	&__circle {
+		position: absolute;
+
+		&-top {
+			top: 85px;
+			left: -173px;
+			width: 320px;
+			height: 320px;
+			background-image: linear-gradient(to left, #00fff0 0%, #40b1e5 100%);
+			border-radius: 50%;
+		}
+		&-bottom {
+			bottom: -66px;
+			right: -55px;
+			width: 167px;
+			height: 167px;
+			background-image: linear-gradient(to left, #00fff0 0%, #40b1e5 100%);
+			border-radius: 50%;
+		}
+	}
+	&-slider {
+		display: flex;
+		justify-content: space-between;
+		&__item {
+			opacity: 0;
+			box-shadow: 0 0 6px rgba(33, 30, 31, 0.4);
+			background-color: #ffffff;
+			padding: 5px 10px 40px 10px;
+			cursor: pointer;
+			flex: 0 1 30%;
+			margin: 0 15px;
+			&:hover {
+				.stuff-contant__overlay {
+					display: flex;
+				}
+			}
+
+			&.slick-active {
+				opacity: 1;
+			}
+		}
+
+		.slick-list {
+			overflow: visible;
+		}
+	}
+}
+.stuff-contant {
+	&__image {
+		padding-top: 124%;
+		margin-bottom: 37px;
+		position: relative;
+	}
+	&__overlay {
+		background-color: #00c5d2;
+		background-image: linear-gradient(to left, #00fff0 0%, #40b1e5 100%);
+		position: absolute;
+		top: -7px;
+		left: -10px;
+		opacity: 0.7;
+		width: 108%;
+		height: 103%;
+		align-items: center;
+		justify-content: center;
+		display: none;
+	}
+	&__link {
+		width: 55px;
+		height: 55px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		box-shadow: 0 2px 8px rgba(33, 30, 31, 0.5);
+		background-color: #ffffff;
+		color: #ff3a2d;
+		font-size: 20px;
+		&:first-child {
+			margin-right: 19px;
+		}
+	}
+
+	&__name {
+		color: #00c5d2;
+		font-family: "Lobster Two";
+		font-size: 24px;
+		line-height: 28px;
+		margin-bottom: 10px;
+		display: inline-block;
+	}
+
+	&__prof {
+		color: #808080;
+		font-size: 18px;
+		display: inline-block;
+		margin-bottom: 26px;
+	}
+}

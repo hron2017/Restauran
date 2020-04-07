@@ -1,0 +1,36 @@
+.sent {
+	&-body {
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: $md3+px) {
+			flex-direction: column;
+		}
+		&__col {
+			flex: 0 1 50%;
+			text-align: left;
+		}
+	}
+}
+.open__list {
+	@media (max-width: $md3+px) {
+		margin-bottom: 35px;
+	}
+}
+.open__item {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #222222;
+	text-align: left;
+	margin-bottom: 12px;
+
+	@media (min-width: $md3+px) {
+		margin-bottom: 43px;
+		font-size: 20px;
+	}
+
+	span {
+		color: #808080;
+		padding-left: 10px;
+	}
+}

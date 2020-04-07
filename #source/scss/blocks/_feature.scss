@@ -1,0 +1,46 @@
+.section-f {
+	padding: 0;
+}
+.feature {
+	padding: 0 75px;
+	position: relative;
+	text-align: center;
+}
+.feature-slider {
+	display: flex;
+	justify-content: space-between;
+
+	&__item {
+		flex: 0 1 270px;
+		padding: 0 15px;
+		color: #1c1c1c;
+		font-family: "Lobster Two";
+		font-size: 24px;
+		font-weight: 400;
+		text-align: center;
+	}
+
+	&__item-image {
+		position: relative;
+		padding-bottom: 85%;
+
+		@media (min-width: $md2+px) {
+			margin-bottom: 34px;
+		}
+	}
+
+	&__item-name {
+		line-height: 33px;
+		@media (min-width: $md2+px) {
+			line-height: 44px;
+		}
+	}
+
+	&__item-prace {
+	}
+
+	&__item-sale {
+		font-size: 16px;
+		text-decoration: line-through;
+	}
+}

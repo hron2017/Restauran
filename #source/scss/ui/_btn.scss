@@ -1,0 +1,66 @@
+//<BUTTONS>====================================================================================================
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+
+  font-family: "Poppins";
+
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 9px 15px;
+  border-radius: 6px;
+  border: 2px solid #ff3a2d;
+  @include anim(0.3s, 0s);
+
+  &:hover {
+    background-color: #ff3a2d;
+  }
+  &.fw {
+    width: 100%;
+    color: #808080;
+    padding: 8px;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  @media (min-width: $md3+px) {
+    font-size: 16px;
+    padding: 20px 35px;
+  }
+}
+.maindish__btn {
+  background-color: #ff3a2d;
+
+  &:hover {
+    color: #222222;
+    background-color: #fff;
+  }
+}
+
+.event__btn {
+  background-color: #ff3a2d;
+
+  align-self: center;
+
+  &:hover {
+    color: #222222;
+    background-color: #fff;
+  }
+
+  @media (min-width: $md2+px) {
+    padding: 25px 58px;
+  }
+}
+
+.sent-form__btn {
+  opacity: 0.7;
+  padding: 14px 35px;
+  &:hover {
+    opacity: 1;
+  }
+}
+//</BUTTONS>====================================================================================================

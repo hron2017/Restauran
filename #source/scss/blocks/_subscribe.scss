@@ -1,0 +1,37 @@
+.section-sub {
+	position: relative;
+	background-image: url(../img/subscribe-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@media (min-width:$md3+px) and (max-width: 1200px) {
+		padding: 100px 0;
+	}
+
+}
+.subscribe {
+	&-body {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media (max-width: $md3+px) {
+			flex-direction: column;
+		}
+		&__text {
+			flex: 0 1 46%;
+			line-height: 20px;
+			text-align: justify;
+
+			@media (max-width: $md3+px) {
+				margin-bottom: 30px;
+			}
+			@media (min-width: $md3+px) {
+				line-height: 28px;
+			}
+		}
+	}
+}
