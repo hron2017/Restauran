@@ -703,7 +703,7 @@ textarea.input {
     background-image: url(../img/icons/title-icon-red.svg);
     left: 0;
     margin-left: 0; }
-  @media (min-width: 767.98px) and (max-width: 1200px) {
+  @media (min-width: 767.98px) and (max-width: 1400px) {
     .subscribe__title {
       margin-bottom: 40px; } }
 
