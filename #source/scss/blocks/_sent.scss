@@ -1,3 +1,12 @@
+.section-se {
+	@media (min-width: $md2+px) {
+		padding-top: 0;
+
+		.title {
+			margin-bottom: 50px;
+		}
+	}
+}
 .sent {
 	&-body {
 		display: flex;

@@ -31,7 +31,9 @@
 		}
 	}
 	&-shop {
-		margin: 0 auto;
+		@media (max-width: $md3+px) {
+			margin: 0 auto;
+		}
 	}
 	&-shop__list {
 		display: flex;

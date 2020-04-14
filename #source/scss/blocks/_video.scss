@@ -5,7 +5,7 @@
 }
 .video {
 	&__overlay {
-		background-image: url(../img/poster.webp);
+		background-image: url(../img/poster.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -33,7 +33,7 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		background-image: url(../img/play.webp);
+		background-image: url(../img/play.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -67,7 +67,7 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			background-image: url(../img/free.webp);
+			background-image: url(../img/free.png);
 
 			width: 275px;
 			height: 187px;

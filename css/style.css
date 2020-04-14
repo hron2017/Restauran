@@ -797,8 +797,9 @@ textarea.input {
       font-family: "FontAwesome";
       top: 2px;
       left: 0; }
-  .header-shop {
-    margin: 0 auto; }
+  @media (max-width: 767.98px) {
+    .header-shop {
+      margin: 0 auto; } }
   .header-shop__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1259,7 +1260,7 @@ font-family: "FontAwesome";
       bottom: -145px;
       right: -145px;
       z-index: -1;
-      background-image: url(../img/form-sheet.webp);
+      background-image: url(../img/form-sheet.png);
       background-repeat: no-repeat;
       background-size: contain;
       width: 358px;
@@ -1491,7 +1492,7 @@ font-family: "FontAwesome";
 
 .section-d {
   position: relative;
-  background-image: url(../img/delivary/delivary-bg.webp);
+  background-image: url(../img/delivary/delivary-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -1631,7 +1632,8 @@ font-family: "FontAwesome";
   display: flex;
   -webkit-box-flex: 0;
   -ms-flex: 0 1 45%;
-  flex: 0 1 45%; }
+  flex: 0 1 45%;
+  margin-bottom: 50px; }
   @media (max-width: 767.98px) {
     .maindish-item {
       -webkit-box-orient: vertical;
@@ -1812,7 +1814,7 @@ font-family: "FontAwesome";
   padding: 0; }
 
 .video__overlay {
-  background-image: url(../img/poster.webp);
+  background-image: url(../img/poster.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1839,7 +1841,7 @@ font-family: "FontAwesome";
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background-image: url(../img/play.webp);
+  background-image: url(../img/play.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1875,7 +1877,7 @@ font-family: "FontAwesome";
       position: absolute;
       top: 0;
       left: 0;
-      background-image: url(../img/free.webp);
+      background-image: url(../img/free.png);
       width: 275px;
       height: 187px; } }
   @media (min-width: 767.98px) {
@@ -2237,6 +2239,12 @@ font-family: "FontAwesome";
 
 .contact__map {
   padding-bottom: 70%; }
+
+@media (min-width: 992.98px) {
+  .section-se {
+    padding-top: 0; }
+    .section-se .title {
+      margin-bottom: 50px; } }
 
 .sent-body {
   display: -webkit-box;

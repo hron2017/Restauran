@@ -50,7 +50,7 @@
 	&-item {
 		display: flex;
 		flex: 0 1 45%;
-
+		margin-bottom: 50px;
 		@media (max-width: $md3+px) {
 			flex-direction: column;
 		}
