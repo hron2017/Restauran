@@ -1,109 +1,121 @@
 .slick {
-	&-btn {
-		color: #ffffff;
-		font-size: 18px;
-		width: 34px;
-		height: 34px;
-		border-radius: 50%;
-		background-color: #ff3a2d;
-		background-image: linear-gradient(to left, #00fff0 0%, #40b1e5 100%);
-		position: absolute;
-		top: 25%;
-		z-index: 1;
+   &-btn {
+      color: #ffffff;
+      font-size: 18px;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background-color: #ff3a2d;
+      background-image: linear-gradient(to left, #00fff0 0%, #40b1e5 100%);
+      position: absolute;
+      top: 25%;
+      z-index: 1;
 
-		@media (min-width: $md3+px) {
-			width: 56px;
-			height: 56px;
-			font-size: 24px;
-		}
-		&-prev {
-			left: -35px;
+      @media (min-width: $md3+px) {
+         width: 56px;
+         height: 56px;
+         font-size: 24px;
+      }
 
-			@media (min-width: $md3+px) {
-				left: -13px;
-			}
-		}
-		&-next {
-			right: -35px;
-			@media (min-width: $md3+px) {
-				right: -14px;
-			}
-		}
-	}
+      &-prev {
+         left: -35px;
+
+         @media (min-width: $md3+px) {
+            left: -13px;
+         }
+      }
+
+      &-next {
+         right: -35px;
+
+         @media (min-width: $md3+px) {
+            right: -14px;
+         }
+      }
+   }
 }
 
 .stuff-slider,
 .feedback-slider {
-	.slick {
-		&-btn {
-			top: 50%;
+   .slick {
+      &-btn {
+         top: 50%;
 
-			&.slick-disabled {
-				opacity: 0.4;
-			}
-		}
-		&-prev {
-			left: -90px;
-		}
-		&-next {
-			right: -90px;
-		}
-	}
+         &.slick-disabled {
+            opacity: 0.4;
+         }
+      }
+
+      &-prev {
+         left: -90px;
+      }
+
+      &-next {
+         right: -90px;
+      }
+   }
 }
+
 .feedback-slider {
-	.slick {
-		&-prev {
-			left: 0;
-			@media (min-width: $md3+px) {
-				left: -30px;
-			}
-		}
-		&-next {
-			right: 0;
-			@media (min-width: $md3+px) {
-				right: -30px;
-			}
-		}
-	}
+   .slick {
+      &-prev {
+         left: 0;
+
+         @media (min-width: $md3+px) {
+            left: -30px;
+         }
+      }
+
+      &-next {
+         right: 0;
+
+         @media (min-width: $md3+px) {
+            right: -30px;
+         }
+      }
+   }
 }
 
 .blog-slick {
-	&__btn {
-		@include button-reset;
-		position: absolute;
-		top: 50%;
-		color: #00c5d2;
+   &__btn {
+      @include button-reset;
+      position: absolute;
+      top: 50%;
+      color: #00c5d2;
 
-		font-size: 26px;
-		z-index: 3;
+      font-size: 26px;
+      z-index: 3;
 
-		&.slick-disabled {
-			opacity: 0.4;
-		}
+      &.slick-disabled {
+         opacity: 0.4;
+      }
 
-		@media (min-width: $md3+px) {
-			font-size: 48px;
-		}
-	}
+      @media (min-width: $md3+px) {
+         font-size: 48px;
+      }
+   }
 
-	&__next {
-		right: -5px;
+   &__next {
+      right: -5px;
 
-		@media (min-width: $md3+px) {
-			right: -15px;
-		}
-		@media (min-width: $md2+px) {
-			right: -25px;
-		}
-	}
-	&__prev {
-		left: -5px;
+      @media (min-width: $md3+px) {
+         right: -15px;
+      }
 
-		@media (min-width: $md3+px) {
-			left: -15px;
-		}
-		@media (min-width: $md2+px) {
-			left: -25px;
-		}
-	}
+      @media (min-width: 1200px) {
+         right: -25px;
+      }
+   }
+
+   &__prev {
+      left: -5px;
+
+      @media (min-width: $md3+px) {
+         left: -15px;
+      }
+
+      @media (min-width: 1200px) {
+         left: -25px;
+      }
+   }
 }

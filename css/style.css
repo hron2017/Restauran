@@ -552,7 +552,7 @@ textarea.input {
   @media (min-width: 767.98px) {
     .blog-slick__next {
       right: -15px; } }
-  @media (min-width: 992.98px) {
+  @media (min-width: 1200px) {
     .blog-slick__next {
       right: -25px; } }
 
@@ -561,7 +561,7 @@ textarea.input {
   @media (min-width: 767.98px) {
     .blog-slick__prev {
       left: -15px; } }
-  @media (min-width: 992.98px) {
+  @media (min-width: 1200px) {
     .blog-slick__prev {
       left: -25px; } }
 
