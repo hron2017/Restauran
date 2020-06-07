@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Lobster Two";
   src: local("../fonts/Lobster Two"), local("../fonts/LobsterTwo"), url("../fonts/lobstertwo.woff2") format("woff2"), url("../fonts/lobstertwo.woff") format("woff"), url("../fonts/lobstertwo.ttf") format("truetype");
@@ -1117,41 +1116,6 @@ textarea.input {
         transform: rotate(45deg);
         bottom: 8px; }
 
-/*
-font-family: "FontAwesome";
-
-
-
-\f1d8 <i class="far fa-paper-plane"></i>  - самолетик
-\f10d <i class="fas fa-quote-left"></i>  - кавычки
-\f00e <i class="fas fa-search-plus"></i>
-\f0c1 <i class="fas fa-link"></i>  --  линк
-\f061 <i class="fas fa-arrow-right"></i>
-\f060 <i class="fas fa-arrow-left"></i>
-\f107 <i class="fas fa-angle-down"></i>  -  angle-down
-\f106 <i class="fas fa-angle-up"></i>  -  angle-up
-\f3cd - телефон
-\f058 - check
-\f406 - account
-\f002, <i class="fas fa-search"></i> - поиск
-\f07a, <i class="fas fa-shopping-cart"></i>
-\f005, <i class="fas fa-star"></i> - звезда
-\f1b9, <i class="fas fa-car"></i>
-\f2f6, <i class="fas fa-sign-in-alt"></i> - лог ин
-\f0e0, <i class="fas fa-envelope"></i> - конверт
-\f879, <i class="fas fa-phone-alt"></i> - трубка телефона
-\f3c5, <i class="fas fa-map-marker-alt"></i> - локация
-\f017, <i class="far fa-clock"></i> - часы
-
-
-СОЦСЕТИ
-\f39e, <i class="fab fa-facebook-f"></i>
-\f099, <i class="fab fa-twitter"></i>
-\f0d5, <i class="fab fa-google-plus-g"></i>
-\f231, <i class="fab fa-pinterest-p"></i>
-\f16d, <i class="fab fa-instagram"></i>
-
-*/
 .section-ms {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 100%;
@@ -1212,6 +1176,9 @@ font-family: "FontAwesome";
       height: 20px;
       border-radius: 4px;
       background-color: #ff3a2d; }
+
+.webp .main-slider__item {
+  background-image: url(../img/main-slidebg.webp); }
 
 .section-w {
   text-align: left; }
@@ -1276,6 +1243,10 @@ font-family: "FontAwesome";
     .wellcome__text {
       margin-bottom: 40px;
       line-height: 28px; } }
+
+.webp .wellcome__col-mod:after {
+  content: '';
+  background-image: url(../img/form-sheet.webp); }
 
 .sign {
   color: #1c1c1c;
@@ -1404,12 +1375,7 @@ font-family: "FontAwesome";
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  /*background-image: url(../img/about-girl.png);
-	background-position: bottom right;
-	background-repeat: no-repeat;
-	background-size: contain;
-	padding-bottom: 117px;*/ }
+  flex-direction: column; }
   @media (min-width: 767.98px) {
     .about {
       -webkit-box-orient: horizontal;
@@ -1517,6 +1483,9 @@ font-family: "FontAwesome";
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column; } }
+
+.webp .section-d {
+  background-image: url(../img/delivary/delivary-bg.webp); }
 
 .delivary-col {
   -webkit-box-flex: 0;
@@ -1669,9 +1638,7 @@ font-family: "FontAwesome";
         -ms-flex-align: end;
         align-items: flex-end; } }
   .maindish-item__contant-name {
-    font-size: 18px;
-    /*display: flex;
-			justify-content: space-between;*/ }
+    font-size: 18px; }
     @media (max-width: 767.98px) {
       .maindish-item__contant-name {
         margin-bottom: 14px; } }
@@ -1858,6 +1825,9 @@ font-family: "FontAwesome";
       -ms-transform: translate(-50%, -65%);
       transform: translate(-50%, -65%); } }
 
+.webp .video__overlay {
+  background-image: url(../img/poster.webp); }
+
 .event {
   width: 95%;
   padding: 35px 10px;
@@ -1957,6 +1927,11 @@ font-family: "FontAwesome";
     color: #222222;
     font-size: 16px;
     line-height: 24px; }
+
+@media (min-width: 650px) {
+  .webp .event:after {
+    content: '';
+    background-image: url(../img/free.webp); } }
 
 .section-fb {
   background-color: #ffe8e7; }
@@ -2058,6 +2033,9 @@ font-family: "FontAwesome";
   @media (min-width: 767.98px) and (max-width: 1200px) {
     .section-sub {
       padding: 100px 0; } }
+
+.webp .section-sub {
+  background-image: url(../img/subscribe-bg.webp); }
 
 .subscribe-body {
   position: relative;

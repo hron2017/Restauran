@@ -1,118 +1,126 @@
 .maindish {
-	text-align: center;
+   text-align: center;
 
-	&-tabs {
-		margin-bottom: 23px;
-	}
-	&__list {
-		display: flex;
-		justify-content: center;
-		margin-bottom: 90px;
+   &-tabs {
+      margin-bottom: 23px;
+   }
 
-		@media (max-width: $md3+px) {
-			margin-bottom: 40px;
-			flex-direction: column;
-			align-items: center;
-		}
-	}
-	&__navitem {
-		color: #222222;
-		font-size: 20px;
-		margin-bottom: 7px;
-		padding-bottom: 2px;
-		border-bottom: 1px solid transparent;
-		@include anim(0.3s, 0s);
-		cursor: pointer;
+   &__list {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 90px;
 
-		@media (min-width: $md3+px) {
-			margin-right: 47px;
-			margin-bottom: 0;
-		}
+      @media (max-width: $md3+px) {
+         margin-bottom: 40px;
+         flex-direction: column;
+         align-items: center;
+      }
+   }
 
-		&:last-child {
-			margin-right: 0;
-		}
-		&.active {
-			color: #ff3a2d;
-			border-bottom: 1px solid #ff3a2d;
-		}
-	}
+   &__navitem {
+      color: #222222;
+      font-size: 20px;
+      margin-bottom: 7px;
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+      @include anim(0.3s, 0s);
+      cursor: pointer;
+
+      @media (min-width: $md3+px) {
+         margin-right: 47px;
+         margin-bottom: 0;
+      }
+
+      &:last-child {
+         margin-right: 0;
+      }
+
+      &.active {
+         color: #ff3a2d;
+         border-bottom: 1px solid #ff3a2d;
+      }
+   }
 }
 
 .maindish {
-	&-list {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		width: 100%;
-		margin-bottom: 50px;
-	}
-	&-item {
-		display: flex;
-		flex: 0 1 45%;
-		margin-bottom: 50px;
-		@media (max-width: $md3+px) {
-			flex-direction: column;
-		}
-	}
+   &-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 50px;
+   }
 
-	&-item__image {
-		@media (min-width: $md3+px) {
-			margin-right: 16px;
-		}
+   &-item {
+      display: flex;
+      flex: 0 1 45%;
+      margin-bottom: 50px;
 
-		img {
-			@media (max-width: $md3+px) {
-				margin-bottom: 14px;
-			}
-		}
-	}
+      @media (max-width: $md3+px) {
+         flex-direction: column;
+      }
+   }
 
-	&-item__contant {
-		display: block;
-		position: relative;
-		overflow: hidden;
-		width: 100%;
+   &-item__image {
+      @media (min-width: $md3+px) {
+         margin-right: 16px;
+      }
 
-		&-heading {
-			margin-bottom: 19px;
-			color: #222222;
+      img {
+         @media (max-width: $md3+px) {
+            margin-bottom: 14px;
+         }
+      }
+   }
 
-			@media (min-width: $md3+px) {
-				display: flex;
-				justify-content: space-between;
-				align-items: flex-end;
-			}
-		}
-		&-name {
-			font-size: 18px;
-			/*display: flex;
-			justify-content: space-between;*/
+   &-item__contant {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
 
-			@media (max-width: $md3+px) {
-				margin-bottom: 14px;
-			}
-		}
-		&-price {
-			font-size: 24px;
-			margin-bottom: -5px;
-		}
-		&-text {
-			color: #808080;
-			line-height: 18px;
-			text-align: left;
+      &-heading {
+         margin-bottom: 19px;
+         color: #222222;
 
-			@media (min-width: $md3+px) {
-				max-width: 295px;
-				line-height: 26px;
-			}
-		}
-		&-dots {
-			@media (min-width: $md3+px) {
-				flex-grow: 1;
-				border-bottom: 3px dotted #666;
-				margin-right: 7px;
-			}
-		}
-	}
+         @media (min-width: $md3+px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+         }
+      }
+
+      &-name {
+         font-size: 18px;
+
+
+         @media (max-width: $md3+px) {
+            margin-bottom: 14px;
+         }
+      }
+
+      &-price {
+         font-size: 24px;
+         margin-bottom: -5px;
+      }
+
+      &-text {
+         color: #808080;
+         line-height: 18px;
+         text-align: left;
+
+         @media (min-width: $md3+px) {
+            max-width: 295px;
+            line-height: 26px;
+         }
+      }
+
+      &-dots {
+         @media (min-width: $md3+px) {
+            flex-grow: 1;
+            border-bottom: 3px dotted #666;
+            margin-right: 7px;
+         }
+      }
+   }
 }

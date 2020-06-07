@@ -1,106 +1,111 @@
 .section-a {
-	text-align: left;
-	padding-bottom: 0;
+   text-align: left;
+   padding-bottom: 0;
 }
+
 .about {
-	overflow: hidden;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	@media (min-width: $md3+px) {
-		flex-direction: row;
-	}
-	/*background-image: url(../img/about-girl.png);
-	background-position: bottom right;
-	background-repeat: no-repeat;
-	background-size: contain;
-	padding-bottom: 117px;*/
+   overflow: hidden;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
 
-	&__contant {
-		max-width: 790px;
-		padding-bottom: 30px;
+   @media (min-width: $md3+px) {
+      flex-direction: row;
+   }
 
-		@media (min-width: $md3+px) {
-			padding-bottom: 117px;
-		}
-	}
-	&__text {
-		color: #808080;
-		line-height: 20px;
-		margin-bottom: 25px;
+   &__contant {
+      max-width: 790px;
+      padding-bottom: 30px;
 
-		@media (max-width: $md3+px) {
-			text-align: justify;
-		}
-		@media (min-width: $md3+px) {
-			margin-bottom: 55px;
-			line-height: 28px;
-		}
-	}
+      @media (min-width: $md3+px) {
+         padding-bottom: 117px;
+      }
+   }
 
-	&-spollers__list {
-		@media (min-width: $md3+px) {
-			padding-left: 16px;
-		}
-	}
-	&-spollers__item {
-		margin-bottom: 9px;
-		@media (min-width: $md3+px) {
-			margin-bottom: 0;
-		}
-	}
-	&-spollers__title {
-		color: #222222;
-		font-size: 14px;
-		font-weight: 500;
-		line-height: 18px;
-		cursor: pointer;
-		position: relative;
-		display: inline-block;
-		padding-right: 43px;
+   &__text {
+      color: #808080;
+      line-height: 20px;
+      margin-bottom: 25px;
 
-		@media (min-width: $md3+px) {
-			font-size: 16px;
-			line-height: 28px;
-			padding-right: 75px;
-		}
-		&:after {
-			content: "\f107";
-			font-family: "FontAwesome";
-			position: absolute;
-			font-size: 12px;
-			top: 0;
-			right: 0;
-		}
-		&.active {
-			color: #00c5d2;
+      @media (max-width: $md3+px) {
+         text-align: justify;
+      }
 
-			&:after {
-				content: "\f106";
-			}
-		}
-	}
+      @media (min-width: $md3+px) {
+         margin-bottom: 55px;
+         line-height: 28px;
+      }
+   }
 
-	&-spollers__text {
-		color: #808080;
-		display: none;
-		line-height: 16px;
+   &-spollers__list {
+      @media (min-width: $md3+px) {
+         padding-left: 16px;
+      }
+   }
 
-		@media (max-width: $md3+px) {
-			font-size: 12px;
-		}
-		@media (min-width: $md3+px) {
-			line-height: 28px;
-		}
-	}
+   &-spollers__item {
+      margin-bottom: 9px;
 
-	&__image {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
+      @media (min-width: $md3+px) {
+         margin-bottom: 0;
+      }
+   }
 
-		img {
-			max-width: 100%;
-		}
-	}
+   &-spollers__title {
+      color: #222222;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      padding-right: 43px;
+
+      @media (min-width: $md3+px) {
+         font-size: 16px;
+         line-height: 28px;
+         padding-right: 75px;
+      }
+
+      &:after {
+         content: "\f107";
+         font-family: "FontAwesome";
+         position: absolute;
+         font-size: 12px;
+         top: 0;
+         right: 0;
+      }
+
+      &.active {
+         color: #00c5d2;
+
+         &:after {
+            content: "\f106";
+         }
+      }
+   }
+
+   &-spollers__text {
+      color: #808080;
+      display: none;
+      line-height: 16px;
+
+      @media (max-width: $md3+px) {
+         font-size: 12px;
+      }
+
+      @media (min-width: $md3+px) {
+         line-height: 28px;
+      }
+   }
+
+   &__image {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      img {
+         max-width: 100%;
+      }
+   }
 }

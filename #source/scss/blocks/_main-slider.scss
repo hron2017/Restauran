@@ -1,61 +1,71 @@
 .section-ms {
-	flex: 1 1 100%;
-	position: relative;
-	padding: 0;
+   flex: 1 1 100%;
+   position: relative;
+   padding: 0;
 }
+
 .main-slider {
-	z-index: 1;
+   z-index: 1;
 
-	&__item {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background-image: url(../img/main-slidebg.png);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		height: 100vh;
-	}
-	&__contant {
-		max-width: 800px;
-		text-align: center;
-		z-index: 3;
+   &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url(../img/main-slidebg.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+   }
 
-		padding: 0 10px;
-	}
+   &__contant {
+      max-width: 800px;
+      text-align: center;
+      z-index: 3;
 
-	&__btn {
-		&:first-child {
-			margin-right: 45px;
-		}
-	}
+      padding: 0 10px;
+   }
 
-	.slick-dots {
-		position: absolute;
-		bottom: 41px;
-		left: 50%;
-		transform: translateX(-50%);
-		display: flex;
-		align-items: flex-end;
-		li {
-			margin-right: 8px;
-			cursor: pointer;
-			width: 10px;
-			height: 10px;
-			border-radius: 4px;
-			background-color: #ffffff;
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-		button {
-			font-size: 0;
-		}
-		.slick-active {
-			width: 10px;
-			height: 20px;
-			border-radius: 4px;
-			background-color: #ff3a2d;
-		}
-	}
+   &__btn {
+      &:first-child {
+         margin-right: 45px;
+      }
+   }
+
+   .slick-dots {
+      position: absolute;
+      bottom: 41px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: flex-end;
+
+      li {
+         margin-right: 8px;
+         cursor: pointer;
+         width: 10px;
+         height: 10px;
+         border-radius: 4px;
+         background-color: #ffffff;
+
+         &:last-child {
+            margin-right: 0;
+         }
+      }
+
+      button {
+         font-size: 0;
+      }
+
+      .slick-active {
+         width: 10px;
+         height: 20px;
+         border-radius: 4px;
+         background-color: #ff3a2d;
+      }
+   }
+}
+
+.webp .main-slider__item {
+   background-image: url(../img/main-slidebg.webp);
 }
