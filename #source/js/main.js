@@ -6,7 +6,7 @@
 //@prepros-append blocks/forms.js
 //@prepros-append blocks/tabs.js
 //@prepros-append blocks/spoller.js
-//@prepros-append blocks/map.js
+
 
 //@prepros-append script.js
 

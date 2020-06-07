@@ -1,45 +1,49 @@
 .section-se {
-	@media (min-width: $md2+px) {
-		padding-top: 0;
+   @media (min-width: $md2+px) {
 
-		.title {
-			margin-bottom: 50px;
-		}
-	}
+
+      .title {
+         margin-bottom: 50px;
+      }
+   }
 }
+
 .sent {
-	&-body {
-		display: flex;
-		justify-content: space-between;
+   &-body {
+      display: flex;
+      justify-content: space-between;
 
-		@media (max-width: $md3+px) {
-			flex-direction: column;
-		}
-		&__col {
-			flex: 0 1 50%;
-			text-align: left;
-		}
-	}
+      @media (max-width: $md3+px) {
+         flex-direction: column;
+      }
+
+      &__col {
+         flex: 0 1 50%;
+         text-align: left;
+      }
+   }
 }
+
 .open__list {
-	@media (max-width: $md3+px) {
-		margin-bottom: 35px;
-	}
+   @media (max-width: $md3+px) {
+      margin-bottom: 35px;
+   }
 }
+
 .open__item {
-	font-size: 16px;
-	text-transform: uppercase;
-	color: #222222;
-	text-align: left;
-	margin-bottom: 12px;
+   font-size: 16px;
+   text-transform: uppercase;
+   color: #222222;
+   text-align: left;
+   margin-bottom: 12px;
 
-	@media (min-width: $md3+px) {
-		margin-bottom: 43px;
-		font-size: 20px;
-	}
+   @media (min-width: $md3+px) {
+      margin-bottom: 43px;
+      font-size: 20px;
+   }
 
-	span {
-		color: #808080;
-		padding-left: 10px;
-	}
+   span {
+      color: #808080;
+      padding-left: 10px;
+   }
 }

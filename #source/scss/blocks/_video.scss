@@ -6,7 +6,7 @@
 
 .video {
    &__overlay {
-      background-image: url(../img/poster.png);
+      background-image: url(../img/video/poster.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -34,7 +34,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-image: url(../img/play.png);
+      background-image: url(../img/video/play.png);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -53,7 +53,11 @@
 }
 
 .webp .video__overlay {
-   background-image: url(../img/poster.webp);
+   background-image: url(../img/video/poster.webp);
+}
+
+.webp .video__play {
+   background-image: url(../img/video/play.webp);
 }
 
 .event {
@@ -73,7 +77,7 @@
          position: absolute;
          top: 0;
          left: 0;
-         background-image: url(../img/free.png);
+         background-image: url(../img/video/free.png);
 
          width: 275px;
          height: 187px;
@@ -170,7 +174,7 @@
    @media (min-width:650px) {
       &:after {
          content: '';
-         background-image: url(../img/free.webp);
+         background-image: url(../img/video/free.webp);
       }
    }
 }
